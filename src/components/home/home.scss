@@ -1,0 +1,44 @@
+.home{
+    position: relative;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background: linear-gradient(135deg, #042743, cadetblue);
+    // background: linear-gradient(135deg,cadetblue, #042743);
+    display: flex;
+
+    .left{
+        width: 75%;
+        height: 100%;
+        // background-color:cadetblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            position: relative;
+            left: -338px;
+            letter-spacing: 3px;
+        }
+    
+        h1{
+            font-size: 100px;
+        }
+    }
+
+    .right{
+        width: 25%;
+        height: 100%;
+        background-color: #05335a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 150px;
+
+        p{
+            letter-spacing: 3px;
+            font-size: large;
+        }
+    }
+}

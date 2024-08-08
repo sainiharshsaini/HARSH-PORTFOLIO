@@ -1,0 +1,42 @@
+.about{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    // background: linear-gradient(135deg, #004d8d, #042743);
+    background: linear-gradient(135deg,cadetblue, #042743);
+    // background: linear-gradient(135deg, #042743, cadetblue);
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    gap: 50px;
+    
+    .aboutme{
+        h1{
+            width: 16%;
+            border-bottom: 1px solid yellow;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .whatidoing{
+
+        h1{
+            width: 26%;
+            border-bottom: 1px solid yellow;
+        }
+
+        .about-card{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .card{
+                width: 30rem;
+                margin-top: 30px;
+            }
+        }
+    }
+}
