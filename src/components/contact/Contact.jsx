@@ -1,39 +1,32 @@
-import { Link } from 'react-router-dom';
 import './contact.scss'
 
-import { RiTwitterXLine, RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiWhatsappLine } from "@remixicon/react";
+import Footer from '../footer/Footer'
 
 export default function Contact() {
     return (
+        <>
         <div className='contact'>
-            <div className="left">
-                <h1>Social Media Links</h1>
-                <div className="socialLink">
-                    <Link to="https://www.linkedin.com/in/harsh-saini-158709238"><RiLinkedinBoxFill/> Linkedin</Link>
-                    <Link to="https://x.com/harshsaini_18?t=_zx6F5EH11KJBifgNn7TxA&s=09"><RiTwitterXLine/> Twitter</Link>
-                    <Link to="https://github.com/sainiharshsaini"><RiGithubFill/> Github</Link>
-                    <Link to="https://www.instagram.com/sainiharsh_18/"><RiInstagramLine/> Instagram</Link>
-                    <Link to="https://wa.me/qr/4AD67ER2Z2ZRD1"><RiWhatsappLine/> WhatsApp</Link>
-                </div>
-            </div>
-            <div className="right">
-                <h1>Contact Form</h1>
+            <div className="contact-heading">
+                <h2>Let’s discuss about your digital project</h2>
+                <p>I'm always excited to take on new challenges and work with like-minded individuals or organizations. Whether you have a clear vision or just an idea in the making, I would love to help bring it to life. <br /> Let's create something amazing together! Feel free to reach out to discuss your project or to simply say hello. <br /> we'll contact you as soon as possible to talk about your new digital endeavors. </p>
                 <form>
-                <div className="form-group">
-                        <label>Name</label>
+                    <div className="form-group">
+                        <label>Name*</label>
                         <input type="text" className='form-control' placeholder='Enter name'/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
+                        <label htmlFor="exampleInputEmail1">Email*</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlTextarea1">Your Message</label>
-                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label htmlFor="exampleFormControlTextarea1">Message*</label>
+                        <textarea className="form-control textarea" id="exampleFormControlTextarea1" rows="10" placeholder='Your message...'></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">SEND MESSAGE</button>
                 </form>
             </div>
+            <Footer/>
         </div>
+        </>
     )
 }

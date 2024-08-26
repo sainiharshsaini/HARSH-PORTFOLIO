@@ -1,44 +1,74 @@
 .home{
     position: relative;
-    top: 60px;
-    height: calc(100vh - 60px);
-    width: 100%;
-    background: linear-gradient(135deg, #042743, cadetblue);
-    // background: linear-gradient(135deg,cadetblue, #042743);
-    display: flex;
+    top: 70px;
 
-    .left{
-        width: 75%;
-        height: 100%;
-        // background-color:cadetblue;
+    .home-content{
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
 
-        p{
-            position: relative;
-            left: -338px;
-            letter-spacing: 3px;
-        }
-    
-        h1{
-            font-size: 100px;
-        }
-    }
+        .hero-section{
+            height: calc(100vh - 70px);
+            // background-image: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            background: linear-gradient(135deg, royalblue, skyblue);
+            border-radius: 0 0 0 15rem;
 
-    .right{
-        width: 25%;
-        height: 100%;
-        background-color: #05335a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
-        p{
-            letter-spacing: 3px;
-            font-size: large;
+            h1{
+                font-size: 6rem;
+
+                span{
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            
+            p{
+                font-size: 1.3rem;
+                font-style: italic;
+                margin-top: 2rem;
+            }
+
+            button{
+                border: none;
+                outline: none;
+                background: linear-gradient(135deg, black, rgb(46, 46, 46));
+                color: #fff;
+                height: 2.9rem;
+                padding: 0.6rem 2rem;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 2rem;
+
+                &:hover{
+                    background: linear-gradient(135deg, black, black);
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-section{
+                padding: 0 2rem;
+                h1{
+                    font-size: 3.5rem;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    margin-top: 3rem;
+                }
+
+                button{
+                    margin-top: 3rem;
+                }
+            }
         }
     }
 }

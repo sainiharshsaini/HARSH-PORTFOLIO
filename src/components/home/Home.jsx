@@ -1,23 +1,29 @@
 import './home.scss'
 
+import Aboutme from './home-components/about-me/Aboutme';
+import Skills from './home-components/skills/Skills';
+// import RecentProjects from './home-components/recent-projects/Recent-projects';
+import Resume from './home-components/resume/Resume';
+
+import Footer from '../footer/Footer';
+
+import { RiArrowRightLine } from "@remixicon/react";
+
 export default function Home() {
     return (
         <div className='home'>
-            <div className="left">
-                <p>HELLO THERE!</p>
-                <h1>
-                    I'm HARSH SAINI,
-                    <br />
-                    a creative Website
-                    <br />
-                    Developer.
-                </h1>
+            <div className="home-content">
+                <div className="hero-section">
+                    <h1>Hi,<br /> I'm <span>Harsh Saini</span>, <br />a Web Developer</h1>
+                    <p>Crafting seamless and dynamic web experiences that bring ideas to life.</p>
+                    <button>Get in Touch <RiArrowRightLine size={25}/></button>
+                </div>
             </div>
-            <div className="right">
-                <p>
-                Seasoned Website Developer passionate about creating visually captivating web applications with a focus on elegant solutions and flawless user experiences.
-                </p>
-            </div>
+            <Aboutme/>
+            {/* <RecentProjects/> */}
+            <Skills/>
+            <Resume/>
+            <Footer/>
         </div>
     )
 }

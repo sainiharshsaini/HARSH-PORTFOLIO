@@ -1,23 +1,18 @@
-import './app.scss'
-
 import Home from './components/home/Home'
-import About from './components/about/About'
-import Projects from './components/projects/Projects'
-import Resume from "./components/resume/Resume"
+import Services from './components/services/Services'
+import Portfolio from './components/portfolio/Portfolio'
+import Workwithus from './components/workwithus/Workwithus'
 import Contact from "./components/contact/Contact"
-
-import Layout from './Layout.jsx';
 
 import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <Routes>
-      <Route path="" element={<Layout/>} />
       <Route exact path="/" element={ <Home/> } />
-      <Route exact path="about" element={ <About/> } />
-      <Route exact path="projects" element={ <Projects/> } />
-      <Route exact path="resume" element={ <Resume/> } />
+      <Route exact path="services" element={ <Services/> } />
+      <Route exact path="portfolio" element={ <Portfolio/> } />
+      <Route exact path="workwithus" element={ <Workwithus/> } />
       <Route exact path="contact" element={ <Contact/> } />
     </Routes>
   )

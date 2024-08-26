@@ -1,0 +1,201 @@
+$color-1 : #cdb4db ; // Mobile
+$color-2 : #fff1e6 ; // Tablet
+$color-3 : #52b788 ; // Laptop
+$color-4 : #bee1e6 ; // Desktop
+
+$mobile  : 576px;
+$tablet  : 768px;
+$laptop  : 992px; 
+$desktop : 1200px;
+
+.demo{
+
+    background-color:#04AA6D;
+
+    img{
+        max-width: 100%;
+        height:auto;
+    }
+
+    // -------------------------------------------------------------------
+
+    .box{
+        .left {
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+        }
+
+        .centre {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%; /* The width is 60%, by default */
+        }
+
+        .right {
+            background-color: #04AA6D;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+        }
+
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+            .left, .centre, .right {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    }
+
+    // -------------------------------------------------------------------
+
+    // .wrapper{
+    //     width:100%;
+    //     display:flex;
+
+    //     .main {
+    //         width:80%;
+    //         height:100px;
+    //         background:blue;
+    //         display:flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    
+    //     .aside{
+    //         width:20%;
+    //         height:100px;
+    //         background:red;
+    //         display:flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    // }
+
+    .wrapper{
+        .main {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:100px;
+            background:blue;
+        }
+        .aside{
+            width:100%;
+            height:100px;
+            background:red;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .wrapper {
+            width: 100%;
+            display: flex;
+
+            .main {
+                width: 80%;
+            }
+
+            .aside {
+                width: 20%;
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+
+    // Static: The static position is the default position of any element on the browser, so the top, left, right and bottom properties won't work for it. This property can be used when you want to return an element back to its initial position after you have moved it with another positioning property.
+
+    .wrapper1{
+        background:yellow;
+        padding:5px;
+
+        .position1{
+            background:red;
+            padding:5px;
+            position:static;
+            top:10px;
+            left:20px;
+        }
+    }
+
+    // Relative: The relative position property positions an element relative to where the intial position of that element was. The following code will explain this better:
+
+    .wrapper2{
+        background:yellow;
+        padding:5px;
+
+        .position2{
+            background:red;
+            padding:5px;
+            position:relative;
+            top:10px;
+            left:20px;
+        }
+    }
+
+    // Fixed: We use the fixed position to keep an element at a particular point on the screen, regardless of the content of the page. The fixed position will be relative to the size of the screen, that is when you set a top value, it will be calculated from the top of your screen. Here is an example. I will reduce the dummy content I am using.
+
+    .wrapper3{
+        background:yellow;
+        padding:5px;
+
+        .position3{
+            background:red;
+            padding:5px;
+            position:fixed;
+            top:10px;
+            left:20px;
+        }
+    }
+
+    // Absolute: The absolute property positions an element relative to a parent element. So if it is inside another element that has a position property other than static, it will be positioned relative to that element. If there is no such element, it will be positioned relative to the top of the screen.
+
+    .wrapper4{
+        background:yellow;
+        position:relative;
+        top:5px;
+        padding:30px;
+
+        .position4{
+            background:red;
+            padding:5px;
+            position:absolute;
+            top:10px;
+            left:30px;     
+        }
+    }
+
+    // max-width sets styles inside the set boundary
+    // min-width sets styles outside the set boundary
+
+    // @media screen and (max-width: $desktop){
+    //     .container{
+    //         background-color: $color-4;
+    //     }
+    // }
+
+    // @media screen and (max-width: $laptop){
+    //     .container{
+    //         background-color: $color-3;
+    //     }
+    // }
+
+    // @media screen and (max-width: $tablet){
+    //     .container{
+    //         background-color: $color-2;
+    //     }
+    // }
+
+    // @media screen and (max-width : $mobile){
+    //     .container{
+    //         background-color: $color-1;
+    //     }
+    // }
+}

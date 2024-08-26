@@ -1,0 +1,150 @@
+.portfolio{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    background: rgb(237, 237, 237);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .portfolio-heading{
+        text-align: center;
+        width: 60%;
+        margin: 3rem;
+
+        h2{
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+
+            span{
+                font-weight: bold;
+                color: royalblue;
+            }
+        }
+        
+        p{
+            font-size: 1.1rem;
+            color: rgb(99, 99, 99);
+            line-height: 1.8rem;
+        }
+    }
+
+    .projects-Link{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        row-gap: 5rem;
+        flex-wrap: wrap;
+        background: linear-gradient(135deg, royalblue, skyblue);
+        padding: 5rem 10rem;
+
+        .card{
+            width: 100%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: row;
+
+            .card-img-top{
+                width: 50%;
+            }
+
+            .card-body{
+                margin: 0 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                p{
+                    font-size: 1.2rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 2px solid royalblue;
+                    color: rgb(99, 99, 99);
+                }
+
+                .technology-use{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-bottom: 1rem;
+
+                    img{
+                        width: 2.5rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+                a{
+                    background: linear-gradient(135deg, royalblue, dodgerblue);
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .portfolio-heading{
+            width: 80%;
+            margin: 2rem;
+
+            p{
+                font-size: 1rem;
+            }
+
+        }
+
+        .projects-Link{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            row-gap: 3rem;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, royalblue, skyblue);
+            padding: 2.5rem;
+    
+            .card{
+                display: block;
+                padding: 0.5rem;
+                // border: 1px solid blue;
+                // box-shadow: 3px 3px 3px 1px rgb(126, 190, 255);
+
+                .card-img-top{
+                    width: 100%;
+                }
+    
+                .card-body{
+                    margin: 0;
+                    display: block;
+        
+                    p{
+                        font-size: 1rem;
+                        padding-bottom: 1rem;
+                        border-bottom: 2px solid royalblue;
+                        color: rgb(99, 99, 99);
+                    }
+    
+                    .technology-use{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding-bottom: 1rem;
+    
+                        img{
+                            width: 2rem;
+                            margin-right: 1rem;
+                        }
+                    }
+    
+                    a{
+                        background: linear-gradient(135deg, royalblue, dodgerblue);
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
