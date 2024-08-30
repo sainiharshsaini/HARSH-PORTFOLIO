@@ -22,9 +22,8 @@ export default function Navbar() {
                     </div>
                     <ul className={isMobileMenuOpen ? "nav-links-mobile" : "nav-links"}>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/services">Services</Link></li>
                         <li><Link to="/portfolio">Portfolio</Link></li>
-                        <li><Link to="/workwithus">Work</Link></li>
+                        <li><Link to="/workwithus">Work with Us</Link></li>
                         <li><Link className='contact-btn' to="/contact">CONTACT</Link></li>
                     </ul>
                     <button className="mobile-menu-icon" onClick={toggleMobileMenu}>

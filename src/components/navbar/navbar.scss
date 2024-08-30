@@ -45,6 +45,10 @@
                     &:hover{
                         color: blue;
                     }
+
+                    &:active{
+                        color: royalblue;
+                    }
                 }
             }
 
@@ -95,10 +99,6 @@
                     
                     &:hover{
                         color: black;
-                    }
-
-                    &:active{
-                        color: royalblue;
                     }
                 }
             }

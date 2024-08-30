@@ -1,6 +1,6 @@
 import './portfolio.scss'
 
-import Footer from '../footer/Footer'
+import Footer from '../../components/footer/Footer'
 
 export default function Portfolio() {
     return (

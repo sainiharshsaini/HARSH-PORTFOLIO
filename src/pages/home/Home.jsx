@@ -1,11 +1,11 @@
 import './home.scss'
 
-import Aboutme from './home-components/about-me/Aboutme';
-import Skills from './home-components/skills/Skills';
-// import RecentProjects from './home-components/recent-projects/Recent-projects';
-import Resume from './home-components/resume/Resume';
+import Aboutme from '../../components/home-components/about-me/Aboutme';
+import Skills from '../../components/home-components/skills/Skills';
+// import RecentProjects from '../../components/home-components/recent-projects/Recent-projects';
+import Resume from '../../components/home-components/resume/Resume';
 
-import Footer from '../footer/Footer';
+import Footer from '../../components/footer/Footer'
 
 import { RiArrowRightLine } from "@remixicon/react";
 
